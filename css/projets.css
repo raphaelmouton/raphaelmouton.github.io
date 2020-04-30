@@ -7,7 +7,7 @@
 
 @media screen and (max-width: 740px) {
   .o-card--projets {
-    padding: 10px;
+    padding: 10px 20px;
   }
 }
 
@@ -32,4 +32,59 @@
 
 .c-skills .fas {
   color: #ff9271;
+}
+
+.c-projets--img {
+  position: relative;
+  z-index: 100;
+  margin-top: 100px;
+}
+
+.c-projets--img::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background  : url('../images/wheel.png');
+  top: -61px;
+  right: 188px;
+  height: 150px;
+  width: 135px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -10;
+  -webkit-animation: rotating 5s linear infinite;
+  opacity: 0.5;
+}
+
+.c-projets--img-2 {
+  position: relative;
+  z-index: 100;
+  margin-top: 100px;
+}
+
+.c-projets--img-2::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background  : url('../images/wheel.png');
+  top: -61px;
+  left: 170px;
+  height: 150px;
+  width: 135px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -10;
+  -webkit-animation: rotating 5s linear infinite;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) {
+  .c-projets--img, .c-projets--img-2 {
+    margin-top: 20px;
+  }
+  .c-projets--img-2::after, .c-projets--img::after{
+    display: none;
+  }
 }
