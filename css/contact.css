@@ -1,0 +1,78 @@
+.o-card--contact {
+  background-color: #FFF;
+  padding: 50px;
+}
+@media screen and (max-width: 740px) {
+  .o-card--contact {
+    padding: 10px;
+  }
+}
+
+.o-card--contact h3, .o-card--contact p {
+  color: rgb(0,0,0,0.5);
+}
+
+.mail {
+  background: linear-gradient(to bottom, #ff9271 0%, #ff9271 100%);
+  background-position: 0 100%;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 50px;
+  color: #FFF !important;
+  transition: background-size .8s;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.mail:hover {
+  color: rgb(0,0,0,0.5) !important;
+  text-decoration: none !important;
+  background-size: 4px 4px;
+  transition: background-size .7s;
+}
+
+.contact--text {
+  padding: 0 100px !important;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+}
+@media screen and (max-width: 940px) {
+  .contact--text {
+    padding: 0 10px !important;
+  }
+}
+
+.o-card--contact h5 {
+  font-size: 3em;
+  font-family: sans-serif;
+  text-align: left;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  background: linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  background-size: 3200px 200px;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: animate-logo;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  transition: font-size 500ms ease-in-out;
+
+}
+
+.contact--photo {
+  height: 500px;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

@@ -1,0 +1,35 @@
+.o-card--projets {
+  background: #FFF;
+  padding: 70px 100px;
+  opacity:0;
+  animation: appearanceDown 1s ease-in-out 0.2s forwards;
+}
+
+@media screen and (max-width: 740px) {
+  .o-card--projets {
+    padding: 10px;
+  }
+}
+
+.o-card--projets .btn{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.o-card--projets h2{
+  color: #6589e7;
+  font-size: 30px;
+}
+
+.o-card--projets p, .o-card--projets li {
+  color: rgb(0,0,0,0.5);
+}
+
+.c-skills {
+  color: #6589e7;
+}
+
+.c-skills .fas {
+  color: #ff9271;
+}

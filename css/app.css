@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,800');
+@import "projets.css";
+@import "header.css";
+@import "contact.css";
+@import "keyframes.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif !important;
+  background-color: #FFF !important;
+  overflow-x: hidden;
+}
+
+a {
+  background: linear-gradient(to bottom, #ff9271 0%, #ff9271 100%);
+  background-position: 0 100%;
+  background-size: 4px 4px;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: rgb(0,0,0,0.5) !important;
+  transition: background-size .8s;
+}
+
+a:hover {
+  color: #FFF !important;
+  text-decoration: none !important;
+  background-size: 4px 50px;
+  transition: background-size .7s;
+}
+
+.leaf {
+  position: fixed;
+  bottom: -15px;
+  left: -30px;
+  height: 150px;
+  width: auto;
+  z-index: 1000;
+  opacity:0;
+  animation: leafDown 4s ease-in-out 1s forwards;
+}
+
+@media screen and (max-width: 980px) {
+  .leaf {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .leaf {
+    display: none;
+  }
+}
+
+h2 span, h3 span {
+  color: #ff9271;
+  font-size: 1.5em;
+}
+
+div[class^="o-card"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.btn {
+  font-weight: 600;
+  color: #ff9271 !important;
+  text-decoration: none;
+  background-color: #FFF !important;
+  opacity: 0.8;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border: 2px solid #ff9271 !important;
+}
+
+.btn:hover, .btn:active {
+  opacity: 1;
+  background-color: #ff9271 !important;
+  color: #FFF !important;
+  transition: all 0.8s;
+}
+
+hr {
+  width: 50%;
+  opacity:0;
+  animation: appearanceRight 1.5s ease-in-out 0.8s forwards;
+}
+
+.gradient-border {
+  --borderWidth: 2px;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: -webkit-linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  background: linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 6s ease alternate infinite;
+  background-size: 300% 300%;
+}

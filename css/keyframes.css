@@ -1,0 +1,65 @@
+
+@keyframes appearanceLeft {
+  0%   {
+    transform: translateX(-50px) translateZ(0);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(0) translateZ(0);
+    opacity:1;
+ }
+}
+
+@keyframes appearanceRight {
+  0%   {
+    transform: translateX(50px) translateZ(0);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(0) translateZ(0);
+    opacity:1;
+ }
+}
+
+@keyframes appearanceDown {
+  0%   {
+    transform: translateY(100px) translateZ(0);
+    opacity:0;
+  }
+  100% {
+    transform: translateY(0) translateZ(0);
+    opacity:1;
+ }
+}
+
+@keyframes leafDown {
+  0%   {
+    transform: translateY(-1000px) translateZ(0) rotate(-360deg);
+    opacity:1;
+  }
+  100% {
+    transform: translateY(0) translateZ(0);
+    opacity:1;
+ }
+}
+
+@-webkit-keyframes animate-logo {
+  0% {
+    background-position: 0 3200px;
+  }
+  100% {
+    background-position: 3200px 0;
+  }
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

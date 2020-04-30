@@ -1,0 +1,56 @@
+header {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.o-card--presentation {
+  background-color: #FFF;
+  padding: 50px;
+}
+@media screen and (max-width: 740px) {
+  .o-card--presentation {
+    padding: 10px;
+  }
+}
+
+.o-card--presentation h3, .o-card--presentation p {
+  color: rgb(0,0,0,0.5);
+}
+
+.presentation--logo {
+  font-size: 3em;
+  font-family: sans-serif;
+  text-align: left;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  background: linear-gradient(left, #6589e7, #D62229, #E97639, #ff9271, #6589e7);
+  background-size: 3200px 200px;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: animate-logo;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  transition: font-size 800ms ease-in-out;
+}
+
+.presentation--photo {
+  height: 500px;
+  width: 500px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://i.ibb.co/hsmLpt3/poihze.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity:0;
+  animation: appearanceRight 1s ease-in-out 0.4s forwards;
+}
+
+.presentation--text {
+  opacity:0;
+  animation: appearanceLeft 0.7s ease-in-out 0.1s forwards;
+}
