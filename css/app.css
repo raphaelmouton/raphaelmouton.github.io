@@ -59,6 +59,13 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    margin: auto !important;
+    padding: 0 !important;
+  }
+}
+
 h2 span, h3 span {
   color: #ff9271;
   font-size: 1.5em;
@@ -68,7 +75,7 @@ div[class^="o-card"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 .btn {
@@ -87,6 +94,13 @@ div[class^="o-card"] {
   background-color: #ff9271 !important;
   color: #FFF !important;
   transition: all 0.8s;
+}
+
+@media screen and (max-width: 480px) {
+  .o-card--projets .btn {
+    width: 50% !important;
+    margin: auto;
+  }
 }
 
 hr {
