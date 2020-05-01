@@ -32,6 +32,16 @@
  }
 }
 
+
+@keyframes appearanceFade {
+  0%   {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+ }
+}
+
 @keyframes leafDown {
   0%   {
     transform: translateY(-1000px) translateZ(0) rotate(-360deg);

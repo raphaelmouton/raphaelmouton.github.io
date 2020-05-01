@@ -36,6 +36,10 @@ a:hover {
   transition: background-size .7s;
 }
 
+.row {
+  margin: 0 !important;
+}
+
 .leaf {
   position: fixed;
   bottom: -15px;
@@ -75,7 +79,6 @@ div[class^="o-card"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
 }
 
 .btn {
@@ -97,6 +100,12 @@ div[class^="o-card"] {
 }
 
 @media screen and (max-width: 480px) {
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .o-card--projets .btn {
     width: 50% !important;
     margin: auto;
@@ -106,7 +115,7 @@ div[class^="o-card"] {
 hr {
   width: 50%;
   opacity:0;
-  animation: appearanceRight 1.5s ease-in-out 0.8s forwards;
+  animation: appearanceFade 1s ease-in-out 0.5s forwards;
 }
 
 .gradient-border {

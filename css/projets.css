@@ -1,6 +1,6 @@
 .o-card--projets {
   background: #FFF;
-  padding: 70px 100px;
+  padding: 50px 100px;
   opacity:0;
   animation: appearanceDown 1s ease-in-out 0.2s forwards;
 }
@@ -9,6 +9,15 @@
   .o-card--projets {
     padding: 10px 20px;
   }
+}
+
+.c--projets-title {
+  opacity:0;
+  animation: appearanceFade 1.5s ease-in-out 1s forwards;
+  text-align: left;
+  color: #ff9271;
+  font-size: 30px;
+  padding: 0 !important;
 }
 
 .o-card--projets .btn{
@@ -34,13 +43,13 @@
   color: #ff9271;
 }
 
-.c-projets--img {
+.c-projets--img, .c-projets--img-2 {
   position: relative;
   z-index: 100;
   margin-top: 100px;
 }
 
-.c-projets--img::after {
+.c-projets--img::after, .c-projets--img-2::after  {
   position: absolute;
   display: block;
   content: "";
@@ -57,27 +66,9 @@
   opacity: 0.5;
 }
 
-.c-projets--img-2 {
-  position: relative;
-  z-index: 100;
-  margin-top: 100px;
-}
-
 .c-projets--img-2::after {
-  position: absolute;
-  display: block;
-  content: "";
-  background  : url('../images/wheel.png');
   top: -61px;
   left: 170px;
-  height: 150px;
-  width: 135px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right;
-  z-index: -10;
-  -webkit-animation: rotating 5s linear infinite;
-  opacity: 0.5;
 }
 
 @media screen and (max-width: 480px) {

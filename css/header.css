@@ -1,6 +1,6 @@
 header {
   max-width: 1200px;
-  margin: auto;
+  margin: 70px auto;
 }
 
 .o-card--presentation {
@@ -48,6 +48,12 @@ header {
   background-position: 50% 50%;
   opacity:0;
   animation: appearanceRight 1s ease-in-out 0.4s forwards;
+}
+
+@media screen and (max-width: 480px) {
+  .presentation--photo {
+    height: 300px;
+  }
 }
 
 .presentation--text {
